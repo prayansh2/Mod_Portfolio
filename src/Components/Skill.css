@@ -157,7 +157,8 @@
 .skill-card span {
   color: #f8fafc;
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: 0.8px;
 }
 
 .skill-card strong {
@@ -236,7 +237,8 @@
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.08);
-  font-weight: 800;
+  /* font-weight: 400; */
+  /* letter-spacing: 0.55px; */
 }
 
 .skills-logo i {
@@ -247,8 +249,8 @@
 
 .skills-logo span {
   color: rgba(248, 250, 252, 0.82);
-  font-size: 0.88rem;
-  font-weight: 900;
+  font-size: 0.90rem;
+  font-weight: 600;
 }
 
 @keyframes skillsMarquee {

@@ -8,6 +8,8 @@ import node from "../images/7.png";
 import mongo from "../images/8.png";
 import git from "../images/9.png";
 import sk from "../images/sk.png";
+import { FaAws, FaDocker, FaJava, FaJs, FaNodeJs } from "react-icons/fa";
+import { SiKubernetes, SiMongodb, SiMysql, SiNginx, SiRedis, SiSpringboot } from "react-icons/si";
 
 const skills = [
   {
@@ -36,16 +38,64 @@ const skills = [
   },
 ];
 
-const marquee = [
-  { label: "HTML", icon: "fa-brands fa-html5" },
-  { label: "CSS", icon: "fa-brands fa-css3-alt" },
-  { label: "JavaScript", icon: "fa-brands fa-js" },
-  { label: "React", icon: "fa-brands fa-react" },
-  { label: "Node", icon: "fa-brands fa-node-js" },
-  { label: "MongoDB", icon: "fa-solid fa-database" },
-  { label: "Git", icon: "fa-brands fa-git-alt" },
-];
 
+const marquee = [
+  {
+    title: "Redis",
+    icon: SiRedis,
+    color: "#DC382D",
+  },
+  {
+    title: "Docker",
+    icon: FaDocker,
+    color: "#2496ED",
+  },
+  {
+    title: "Kubernetes",
+    icon: SiKubernetes,
+    color: "#326CE5",
+  },
+  {
+    title: "AWS",
+    icon: FaAws,
+    color: "#FF9900",
+  },
+  {
+    title: "Node.js",
+    icon: FaNodeJs,
+    color: "#339933",
+  },
+  {
+    title: "Nginx",
+    icon: SiNginx,
+    color: "#009639",
+  },
+  {
+    title: "MySQL",
+    icon: SiMysql,
+    color: "#4479A1",
+  },
+  {
+    title: "MongoDB",
+    icon: SiMongodb,
+    color: "#47A248",
+  },
+  {
+    title: "Spring Boot",
+    icon: SiSpringboot,
+    color: "#6DB33F",
+  },
+  {
+    title: "Java",
+    icon: FaJava,
+    color: "#007396",
+  },
+  {
+    title: "JavaScript",
+    icon: FaJs,
+    color: "#F7DF1E",
+  },
+];
 const Skill = () => {
   return (
     <section id="skill" className="skills-showcase">
@@ -85,12 +135,15 @@ const Skill = () => {
 
       <div className="skills-marquee" aria-label="Technology stack">
         <div className="skills-track">
-          {[...marquee, ...marquee].map((item, index) => (
-            <div className="skills-logo" key={`${item.label}-${index}`}>
-              <i className={item.icon}></i>
-              <span>{item.label}</span>
+          {[...marquee, ...marquee].map((item, index) => {
+             const Icon = item.icon;
+            return (
+              <div className="skills-logo" key={`${item.label}-${index}`}>
+              <Icon size={40} style={{ color: item.color }} />
+              <span>{item.title}</span>
             </div>
-          ))}
+            )
+})}
         </div>
       </div>
     </section>

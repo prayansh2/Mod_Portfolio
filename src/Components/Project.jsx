@@ -3,9 +3,7 @@ import '../Components/Project.css'
 import g2 from '../images/g1.png'
 import Phone from '../Components/Phone'
 import Button from '../Small/Button'
-import v1 from '../images/4.mp4'
-import v2 from '../images/4.mp4'
-import v3 from '../images/4.mp4'
+
 const Project = () => {
 
   return (

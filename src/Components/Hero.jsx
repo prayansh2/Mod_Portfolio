@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-scroll";
-import img1 from "../images/1.png";
+// import img1 from "../images/1.png";
 import hero from "../images/hero.png";
 import "../Components/Hero.css";
 import Button from "../Small/Button";
-import res from "../Small/prayansh11.pdf";
+import res from "../Small/Priyanshu_updated_cv.pdf";
 
 const Hero = () => {
   const fp = () => {
     const anchor = document.createElement("a");
     anchor.href = res;
-    anchor.setAttribute("download", "Prayansh_Resume.pdf");
+    anchor.setAttribute("download", "Priyanshu_Saini_Resume.pdf");
     document.body.appendChild(anchor);
     anchor.click();
     document.body.removeChild(anchor);
@@ -24,25 +24,26 @@ const Hero = () => {
     <section id="Home" name="Home" className="main hero-section">
       <div className="hero-shell">
         <div className="stext-section hero-copy">
-          <span className="hero-kicker">Full stack developer</span>
-          <h1>Prayansh builds modern web products.</h1>
+          <span className="hero-kicker">Backend developer</span>
+          <h1>Priyanshu builds scalable backend systems.</h1>
           <p>
-            I turn ideas into polished React interfaces, practical backend
-            flows, and responsive experiences that feel clean from first click.
+            I focus on reliable APIs, integrations, real-time systems, and
+            production-ready backend workflows using Node.js, Java, Spring Boot,
+            Redis, Docker, and AWS.
           </p>
 
           <div className="hero-meta">
             <div>
-              <strong>React</strong>
-              <span>Frontend</span>
+              <strong>Java</strong>
+              <span>Spring Boot</span>
             </div>
             <div>
               <strong>Node</strong>
-              <span>Backend</span>
+              <span>APIs</span>
             </div>
             <div>
-              <strong>150+</strong>
-              <span>Problems</span>
+              <strong>AWS</strong>
+              <span>Deploy</span>
             </div>
           </div>
 
@@ -69,7 +70,7 @@ const Hero = () => {
           </div>
           <div className="hero-card hero-card-bottom">
             <span>Focus</span>
-            <strong>Design + code</strong>
+            <strong>Backend + scale</strong>
           </div>
         </div>
       </div>

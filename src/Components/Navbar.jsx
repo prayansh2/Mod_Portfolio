@@ -29,10 +29,11 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ?'scroll':''}`}>
 
-        <h1>Prayansh</h1>
+        <h1>Priyanshu</h1>
         <ul className='menu-items '>
             <li className='menu-item'><Link to="Home" duration={500} smooth={true} onClick={handeltoggle}>Home</Link></li>
             <li className='menu-item'><Link to="About" duration={500} smooth={true} onClick={handeltoggle}>About</Link></li>
+            <li className='menu-item'><Link to="Experience" duration={500} smooth={true} onClick={handeltoggle}>Experience</Link></li>
             <li className='menu-item'><Link to="Project" duration={500} smooth={true} onClick={handeltoggle}>Project</Link></li>
             <li className='menu-item'><Link to="Contact" duration={500} smooth={true} onClick={handeltoggle}>Contact</Link></li>
         </ul>

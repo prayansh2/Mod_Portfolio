@@ -1,8 +1,8 @@
 .main.hero-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 100svh;
   overflow: hidden;
-  padding: 122px 6% 96px;
+  padding: clamp(92px, 10vw, 122px) 6% clamp(64px, 8vw, 96px);
   color: #f8fafc;
   background:
     linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
@@ -28,9 +28,14 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
   gap: clamp(34px, 6vw, 86px);
   align-items: center;
+  min-width: 0;
+}
+
+.hero-copy {
+  min-width: 0;
 }
 
 .hero-kicker {
@@ -42,11 +47,12 @@
 }
 
 .hero-copy h1 {
-  max-width: 820px;
+  max-width: 780px;
   margin-top: 14px;
   color: #f8fafc;
-  font-size: clamp(3rem, 7vw, 7.2rem);
-  line-height: 0.9;
+  font-size: clamp(2.45rem, 5.4vw, 4.95rem);
+  line-height: 0.96;
+  overflow-wrap: break-word;
 }
 
 .hero-copy p {
@@ -66,6 +72,7 @@
 }
 
 .hero-meta div {
+  min-width: 0;
   padding: 16px;
   border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 8px;
@@ -89,6 +96,7 @@
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .socials {
@@ -134,8 +142,9 @@ i:hover {
 .img-section.hero-visual {
   position: relative;
   display: grid;
-  min-height: 560px;
+  min-height: clamp(420px, 48vw, 560px);
   place-items: center;
+  min-width: 0;
 }
 
 .hero-visual::before {
@@ -150,9 +159,17 @@ i:hover {
 .hero-visual img {
   position: relative;
   z-index: 2;
-  width: min(1990px, 126%);
+ width: clamp(300px, 40vw, 500px);
+  height: clamp(300px, 40vw, 500px);
+
+    width: clamp(550px, 60vw, 750px);
+  height: clamp(550px, 60vw, 750px);
+
+  object-fit: contain;
+
   filter: drop-shadow(0 28px 50px rgba(0, 0, 0, 0.42));
   animation: heroFloat 5.2s ease-in-out infinite;
+  scale: 1;
 }
 
 .hero-orbit {
@@ -228,47 +245,124 @@ i:hover {
 
 @media (max-width: 920px) {
   .main.hero-section {
-    padding: 108px 4% 76px;
+    padding: 92px 4% 72px;
   }
 
   .hero-shell {
     grid-template-columns: 1fr;
   }
 
-  .img-section.hero-visual {
+   .img-section.hero-visual {
     order: -1;
-    min-height: 390px;
+
+    min-height: 500px;
   }
 
   .hero-visual img {
-    width: min(300px, 72%);
+    width: clamp(420px, 78vw, 700px);
+
+    max-width: 100%;
   }
 }
 
 @media (max-width: 560px) {
   .main.hero-section {
-    padding-top: 92px;
+    padding: 86px 4% 60px;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 342px;
+  }
+
+  .hero-copy h1 {
+    max-width: 100%;
+    font-size: clamp(2rem, 8.8vw, 2.5rem);
+    line-height: 1.08;
+  }
+
+  .hero-copy p {
+    margin-top: 16px;
+    font-size: 0.96rem;
+    line-height: 1.7;
+  }
+
+  .img-section.hero-visual {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: visible;
+  }
+
+  .hero-visual img {
+    width: 140vw;      /* Bigger on mobile */
+    max-width: none;
+
+    height: auto;
+
+    scale: 1.15;
+
+    object-fit: contain;
   }
 
   .hero-meta {
     grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 22px;
+    max-width: 100%;
+  }
+
+  .hero-meta div {
+    padding: 11px 8px;
+  }
+
+  .hero-meta strong {
+    font-size: 1rem;
+  }
+
+  .hero-meta span {
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
   }
 
   .hero-card {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    margin-top: 10px;
+    display: none;
   }
 
   .hero-actions {
     flex-direction: column;
+    max-width: 342px;
   }
 
   .hero-actions a,
   .hero-actions .custom-button,
   .hero-actions button {
     width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-copy h1 {
+    font-size: clamp(1.92rem, 8.5vw, 2.28rem);
+  }
+
+  .hero-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual img {
+    width: 155vw;
+
+    scale: 1.2;
+  }
+  .hero-card {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    margin-top: 8px;
   }
 }
 

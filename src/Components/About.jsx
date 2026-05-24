@@ -24,9 +24,9 @@ const education = [
 ];
 
 const highlights = [
-  "Full-stack developer focused on React interfaces and practical backend flows.",
-  "Comfortable turning rough ideas into clean, responsive, working products.",
-  "Strong debugging mindset with consistent DSA and problem-solving practice.",
+  "Backend-focused developer working with Node.js, Java, Spring Boot, REST APIs, and integrations.",
+  "Comfortable building document workflows, ERP connectors, inventory ledgers, and real-time services.",
+  "Strong debugging mindset with database, API reliability, and deployment-focused problem solving.",
 ];
 
 const About = () => {
@@ -46,19 +46,19 @@ const About = () => {
             <span>Problems solved</span>
           </div>
           <div className="about-stat about-stat-two">
-            <strong>8.0</strong>
-            <span>B.Tech CGPA</span>
+            <strong>2</strong>
+            <span>Internships</span>
           </div>
         </div>
 
         <div className="about-content">
           <span className="about-kicker">About me</span>
-          <h2>I build smooth web experiences with clean logic behind them.</h2>
+          <h2>I build backend systems that stay reliable as products grow.</h2>
           <p>
-            I am Prayansh, a full-stack developer who enjoys building interfaces
-            that feel polished and systems that stay understandable. My work sits
-            between design detail, React development, backend APIs, and steady
-            problem solving.
+            I am Priyanshu Saini, a backend-focused developer with internship
+            experience in document management systems, ERP integrations,
+            inventory workflows, API connectors, authentication, webhooks, and
+            real-time matching services.
           </p>
 
           <div className="about-highlights">

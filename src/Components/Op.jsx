@@ -1,48 +1,48 @@
 import React, { useEffect } from "react";
 import "./Op.css";
-import bk from "../images/bk.jpg";
-import one from "../images/one.png";
-import two from "../images/two.png";
-import three from "../images/three.png";
+import mcp from "../images/mcp.jpg";
+import ecom from "../images/ecom.jpg";
+import chatapp from "../images/chatapp.jpg";
 import g1 from "../images/g1.png";
 
 const projects = [
   {
-    eyebrow: "Full stack build",
-    title: "Blog Application",
-    text: "A publishing experience with authentication, post workflows, clean reading pages, and a dashboard made for quick content management.",
-    image: bk,
+    eyebrow: "Protocol tooling",
+    title: "MCP Tool Server",
+    text: "A custom Model Context Protocol server that exposes structured tools for Claude Desktop with typed schemas, request routing, response formatting, and error recovery.",
+    image: mcp,
     accent: "#6ee7b7",
-    tags: ["React", "Node", "MongoDB", "Auth"],
-    stats: ["Admin panel", "CRUD posts", "Responsive UI"],
+    tags: ["Node.js", "MCP SDK", "Tool schemas", "Claude Desktop"],
+    stats: ["Tool registration", "Typed I/O", "Error recovery"],
   },
   {
-    eyebrow: "Social interface",
-    title: "Reel Profile UI",
-    text: "A polished mobile-first social layout focused on profile discovery, media cards, and high-contrast interaction states.",
-    image: one,
-    accent: "#f9a8d4",
-    tags: ["React", "CSS", "Animation", "UI"],
-    stats: ["Mobile flow", "Media grid", "Micro motion"],
-  },
-  {
-    eyebrow: "Messaging flow",
-    title: "Chat Experience",
-    text: "A conversation interface with layered message states, contact actions, and compact UI patterns designed for repeated use.",
-    image: two,
+    eyebrow: "Realtime system",
+    title: "Real-Time User Matcher",
+    text: "An anonymous chat matching backend using WebSockets and Redis queue management, with dropped-connection recovery and deployment on AWS EC2 behind Nginx.",
+    image: chatapp,
     accent: "#93c5fd",
-    tags: ["React", "State", "Components", "UX"],
-    stats: ["Chat shell", "Reusable parts", "Clean spacing"],
+    tags: ["Node.js", "Socket.io", "Redis", "Nginx", "AWS EC2"],
+    stats: ["Live matching", "Queue recovery", "PM2 deployment"],
   },
   {
-    eyebrow: "Creative product",
-    title: "Story Editor",
-    text: "A full-screen media editing concept with tool controls, strong framing, and app-like visual hierarchy.",
-    image: three,
-    accent: "#fde68a",
-    tags: ["Frontend", "Motion", "Design", "Prototype"],
-    stats: ["Immersive view", "Tool rail", "Touch-first"],
+    eyebrow: "Java backend",
+    title: "E-Commerce Backend",
+    text: "A Spring Boot REST backend with user management, product catalog, cart, orders, JWT authentication, role-based access, validation, pagination, and exception handling.",
+    image: ecom,
+    accent: "#f9a8d4",
+    tags: ["Java", "Spring Boot", "JPA", "MySQL", "JWT"],
+    stats: ["15+ REST APIs", "RBAC auth", "Layered architecture"],
   },
+  
+  // {
+  //   eyebrow: "Production workflow",
+  //   title: "Document Versioning",
+  //   text: "Backend workflows for document view tracking, history, version restore, inventory ledger audit trails, and aggregation-heavy activity endpoints.",
+  //   image: three,
+  //   accent: "#fde68a",
+  //   tags: ["APIs", "Aggregations", "Versioning", "Audit logs"],
+  //   stats: ["View tracking", "History restore", "Inventory ledger"],
+  // },
 ];
 
 const Op = () => {
@@ -67,10 +67,10 @@ const Op = () => {
       <div className="project-bg-word">PROJECTS</div>
       <div className="project-intro">
         <span>Selected work</span>
-        <h2>Where the stack becomes real products.</h2>
+        <h2>Backend projects built around scale, reliability, and integrations.</h2>
         <p>
-          A sharper showcase for the work: each card stays focused, uses layered
-          movement, and gives recruiters quick signals about the build.
+          A focused showcase of API systems, protocol tooling, real-time
+          infrastructure, and database-heavy workflows from my resume.
         </p>
       </div>
 

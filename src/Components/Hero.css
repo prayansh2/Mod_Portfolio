@@ -50,7 +50,7 @@
   max-width: 780px;
   /* margin-top: 14px; */
   color: #f8fafc;
-  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   line-height: 0.96;
   overflow-wrap: break-word;
 }
@@ -162,8 +162,8 @@ i:hover {
  width: clamp(300px, 40vw, 500px);
   height: clamp(300px, 40vw, 500px);
 
-    width: clamp(550px, 60vw, 750px);
-  height: clamp(550px, 60vw, 750px);
+    /* width: clamp(550px, 60vw, 750px);
+  height: clamp(550px, 60vw, 750px); */
 
   object-fit: contain;
 

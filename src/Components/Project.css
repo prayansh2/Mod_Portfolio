@@ -1,0 +1,69 @@
+#Project{
+    padding: 3% 6%;
+    /* padding-top: 80%; */
+    overflow: hidden;
+}
+
+
+.pro-phone{
+    padding-top: 49px;
+    margin-bottom: 49px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+}
+.btn-p{
+    padding-top: 15px;
+}
+.btn-p>p{
+    text-align: justify;
+    width: 100%;
+    /* font-weight: 400; */
+    font-size: 16px;
+    /* letter-spacing: .5px; */
+    /* word-spacing: 1px; */
+}
+
+.zoom>:nth-child(1)
+{
+    /* top: 0; */
+    /* position: sticky; */
+    /* will-change: transform; */
+    transform: scale(1); 
+    /* padding: auto 20%; */
+    /* transition: 0.1s  ease-in-out; */
+}
+
+/* @media (min-width:320px) {
+    .zoom>:nth-child(2)
+    {
+        padding-top: 7%;
+    }
+} */
+@media (min-width:426px) and (max-width:769px) {
+    .zoom>:nth-child(1)
+    {
+        transform: scale(1);
+    }
+}
+
+@media (min-width:769px)
+{
+    .pro-phone{
+        flex-direction: row;
+        padding: 4% 0%;
+        justify-content: space-around;
+        flex-basis:1 1 ;
+        gap: 20px;
+    }
+    .btn-p{
+        width: 70%;
+    }
+    .zoom>:nth-child(1)
+{
+    transform: scale(1); 
+}
+}

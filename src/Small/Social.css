@@ -1,0 +1,36 @@
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2% 0%;
+    height: fit-content;
+}
+.git,.git>:active,.git>:focus{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: none;
+
+}
+.social>img{
+    height: 45px;
+    width: 45px;
+    width: fit-content;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+}
+@media (min-width:426px) and (max-width:769px) {
+    .social{
+        padding: 0;
+        padding-top: 20px;
+    }
+
+}
+
+@media (min-width:790px) and (max-width:1440px)
+{
+   .social{
+    width: 400px;
+   }
+}

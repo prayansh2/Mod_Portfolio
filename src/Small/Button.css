@@ -1,0 +1,45 @@
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-button > button {
+  display: inline-flex;
+  min-width: 150px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  color: #0f172a;
+  background-color: var(--secondary-color);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+  font: inherit;
+  font-size: 0.98rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.custom-button > button:hover {
+  transform: translateY(-3px);
+}
+
+.custom-button > button > img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.custom-button > button > i {
+  font-size: 0.98rem;
+}
+
+@media (max-width: 520px) {
+  .custom-button > button {
+    width: 100%;
+  }
+}

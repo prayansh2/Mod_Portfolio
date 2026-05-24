@@ -1,0 +1,31 @@
+.phone{
+    /* background-color: aqua; */
+    position: relative;
+    width: fit-content;
+    /* width: 100%; */
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: scale(120%); */
+    /* overflow: hidden; */
+    background-color: aqua;
+}
+.image{
+    z-index: 10;
+    overflow: hidden;
+}
+.image>img{
+    width: 217px;
+    height: 434px;
+}
+
+.vid-sec{
+    position: absolute;
+    top: 10px;
+    left: 11.6px;
+}
+.vid-sec>video{
+    width: 194px;
+    border-radius: 20px;
+}

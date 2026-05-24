@@ -1,0 +1,30 @@
+
+
+button{
+  -webkit-tap-highlight-color: transparent;
+}
+
+.headings{
+  padding-top: 50px;
+}
+
+.headings>h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #222;
+}
+.headings>h1{
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.492);
+}
+@media (min-width:426px) and (max-width:769px) {
+  .headings{
+    padding-top: 60px;
+  }
+}
+
+
+

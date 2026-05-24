@@ -1,0 +1,42 @@
+#skills{
+    padding: 2% 6%;
+    position: relative;
+    background-image: url(../images/bk.jpg);
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    position: relative;
+    /* padding-bottom: 4%; */
+}
+
+
+@media (min-width:426px) and (max-width:769px) {
+    /* #skills>h3{
+        font-size: 2rem;
+    }
+    #skills>h1{
+        font-size: 3rem;
+    }  */
+    .skill{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+   
+}
+
+@media (min-width:769px) 
+{
+   .skill{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   } 
+   .skill>:nth-child(1),:nth-child(2)
+   {
+    /* width: 100%; */
+   }
+}
+

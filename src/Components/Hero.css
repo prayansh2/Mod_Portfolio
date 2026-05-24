@@ -2,7 +2,7 @@
   position: relative;
   min-height: 100svh;
   overflow: hidden;
-  padding: clamp(5px, 1vw, 5px) 6% clamp(64px, 8vw, 96px);
+  padding: clamp(70px, 3vw, 20px) 6% clamp(64px, 8vw, 96px);
   color: #f8fafc;
   background:
     linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
